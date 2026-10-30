@@ -1,0 +1,11 @@
+[project]
+name = "griptape-nodes-library-blender-bridge"
+version = "0.1.0"
+description = "Bridge images, videos, and scene commands between Blender and Griptape Nodes over a local HTTP bridge."
+requires-python = ">=3.10"
+dependencies = [
+    "pillow>=10.0.0",
+]
+
+[tool.setuptools]
+packages = ["blender_bridge_nodes"]

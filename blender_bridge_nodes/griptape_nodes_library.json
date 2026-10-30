@@ -1,0 +1,61 @@
+{
+    "name": "Blender Bridge Library",
+    "library_schema_version": "0.1.0",
+    "metadata": {
+        "author": "Griptape Community",
+        "description": "Exchange images/videos with Blender and drive the open scene over a local HTTP bridge.",
+        "library_version": "0.1.0",
+        "engine_version": "0.67.0",
+        "tags": [
+            "Griptape",
+            "Blender",
+            "Bridge",
+            "Images",
+            "Video",
+            "3D"
+        ],
+        "dependencies": {
+            "pip_dependencies": [
+                "pillow>=10.0.0"
+            ]
+        }
+    },
+    "settings": [],
+    "categories": [
+        {
+            "Integrations": {
+                "color": "border-purple-500",
+                "title": "Integrations",
+                "description": "Bridges to external creative applications",
+                "icon": "Plug"
+            }
+        }
+    ],
+    "widgets": [
+        {
+            "name": "BlenderBridgeWidget",
+            "path": "BlenderBridgeWidget.js",
+            "description": "Widget for Blender bridge status, incoming media preview, and send/pull controls."
+        }
+    ],
+    "nodes": [
+        {
+            "class_name": "BlenderBridgeNode",
+            "file_path": "blender_bridge_node.py",
+            "metadata": {
+                "category": "Integrations",
+                "description": "Receive images/videos from Blender and send result media back.",
+                "display_name": "Blender Bridge"
+            }
+        },
+        {
+            "class_name": "BlenderSceneCommandNode",
+            "file_path": "blender_scene_command_node.py",
+            "metadata": {
+                "category": "Integrations",
+                "description": "Run a scene command inside Blender (snapshot, camera, objects, python).",
+                "display_name": "Blender Scene Command"
+            }
+        }
+    ]
+}

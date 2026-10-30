@@ -1,0 +1,18 @@
+schema_version = "1.0.0"
+
+id = "griptape_bridge"
+version = "0.7.5"
+name = "Griptape Bridge"
+tagline = "Send images and video to Griptape Nodes and back, let flows drive the scene"
+maintainer = "Griptape Community"
+type = "add-on"
+
+blender_version_min = "4.2.0"
+
+license = ["SPDX:MIT"]
+
+tags = ["Pipeline", "Render"]
+
+[permissions]
+network = "Communicates with the local Griptape Nodes engine (127.0.0.1) and serves the phone camera page on the local network"
+files = "Saves received media next to the .blend file or in the temp folder"

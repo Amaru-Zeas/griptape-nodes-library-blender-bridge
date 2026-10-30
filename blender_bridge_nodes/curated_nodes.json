@@ -1,0 +1,14 @@
+{
+  "_comment": "Curated nodes shown in Blender by default (star toggle shows all). 'match' is the node's display name or node_type; 'tab' optionally forces a tab: IMAGE, VIDEO, THREED, TEXT, AUDIO, OTHER.",
+  "nodes": [
+    {"match": "OpenAI Image Generation", "tab": "IMAGE"},
+    {"match": "Seedream Image Generation", "tab": "IMAGE"},
+    {"match": "Google Nano Banana Image Generation", "tab": "IMAGE"},
+    {"match": "Seedance 2.0 Video Generation", "tab": "VIDEO"},
+    {"match": "Seedance 2.5 Video Generation", "tab": "VIDEO"},
+    {"match": "Tripo Text to 3D", "tab": "THREED"},
+    {"match": "Tripo Image to 3D", "tab": "THREED"},
+    {"match": "Tripo Multiview to 3D", "tab": "THREED"},
+    {"match": "Agent", "tab": "TEXT"}
+  ]
+}
